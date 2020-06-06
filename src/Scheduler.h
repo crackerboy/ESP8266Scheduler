@@ -19,8 +19,10 @@ public:
     static void updateCurrentTask();
 	
     static void start(Task *task);
-
     static void begin();
+
+    static void delay(unsigned long ms);
+    //static void yield();
 
 private:
     friend void task_tramponline();

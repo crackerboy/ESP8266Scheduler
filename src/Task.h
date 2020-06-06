@@ -14,11 +14,6 @@ public:
         cont_init(&context);
     }
 
-protected:
-    virtual void setup() {}
-
-    virtual void loop() {}
-
     void delay(unsigned long ms) {
         if (ms) {
             delay_start = millis();
@@ -31,6 +26,11 @@ protected:
     void yield() {
         cont_yield(&context);
     }
+
+protected:
+    virtual void setup() {}
+
+    virtual void loop() {}
 
 	inline bool isDelayed() {
 		return (delay_ms != 0);
