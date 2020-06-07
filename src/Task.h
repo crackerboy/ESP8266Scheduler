@@ -14,12 +14,11 @@ public:
         cont_init(&context);
     }
 
-    void delay(unsigned long ms) {
+    void sleep(unsigned long ms) {
         if (ms) {
             delay_start = millis();
             delay_ms = ms;
         }
-
         yield();
     }
 

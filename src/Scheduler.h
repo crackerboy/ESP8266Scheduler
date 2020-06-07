@@ -21,7 +21,7 @@ public:
     static void start(Task *task);
     static void begin();
 
-    static void delay(unsigned long ms);
+    //static void delay(unsigned long ms);
     //static void yield();
 
 private:

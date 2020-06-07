@@ -134,8 +134,8 @@ void SchedulerClass::begin() {
     }
 }
 
- void SchedulerClass::delay(unsigned long ms) {
-	 current->delay(ms);
+ void SchedulerClass::sleep(unsigned long ms) {
+	 current->sleep(ms);
  }
 
 void task_tramponline() {
